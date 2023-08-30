@@ -4,9 +4,13 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { getFirestore } from "firebase/firestore";
 
+// Hides APIKey
+require('dotenv').config()
+const API_KEY = process.env.API_KEY
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCx1PJXDuYMaiwdXIChYjrg3BqoSGhJHdA",
+  apiKey: `${API_KEY}`,
   authDomain: "expense-tracker-9fe49.firebaseapp.com",
   projectId: "expense-tracker-9fe49",
   storageBucket: "expense-tracker-9fe49.appspot.com",

@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Lobster';
+  font-family:'Lobster';
   font-style: normal;
   font-weight: normal;
-  src: local('Lobster'), url('http://themes.googleusercontent.com/static/fonts/lobster/v4/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff') format('woff');
+  src: local('Lobster'), url('./fonts/Lobster.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 *{
@@ -53,15 +60,6 @@ input:active{
   --tw-bg-opacity: 1;
   background-color: #022b41;
 }
-
-
-@font-face {
-  font-family: 'Coolvetica';
-  src: url('./fonts/CoolveticaRg-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 :root {
   --foreground-rgb: 0, 0, 0;

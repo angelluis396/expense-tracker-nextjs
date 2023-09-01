@@ -74,18 +74,18 @@ const deleteItem = async (id) => {
               value={newItem.name}
               onChange={(e) => setNewItem({ ...newItem, name: e.target.value })}             
               type='text' 
-              placeholder='Enter Item'
+              placeholder='Item'
               id='input'  
-              className='col-span-3 p-3 border'
+              className='col-span-3 p-3'
             />
 
             <input
               value={newItem.price}
               onChange={(e) => setNewItem({ ...newItem, price: e.target.value })}
               type='number' 
-              placeholder='Enter $'
+              placeholder='$'
               id='input'
-              className='col-span-2 p-3 border mx-3'
+              className='col-span-2 p-3  mx-3'
             />
 
             <button 

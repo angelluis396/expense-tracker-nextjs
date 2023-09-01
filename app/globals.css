@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lobster'), url('http://themes.googleusercontent.com/static/fonts/lobster/v4/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff') format('woff');
+}
+
 *{
   font-family: 'Coolvetica', sans-serif;
   letter-spacing: 1px;
@@ -12,7 +19,7 @@ h1, span, button {
 }
 h1 {
   text-decoration: underline;
-  font-family: 'La Belle Aurore';
+  font-family: 'Lobster', sans-serif;
 }
 
 p {
@@ -25,7 +32,18 @@ p {
 #input {
   background: #115173;
   color: #ffd700;
+  border: solid 1px #ffd700;
 }
+input:after {
+  border-color: #ffd700;
+}
+input:before {
+  border-color: #ffd700;
+}
+input:active{
+  border-color: #ffd700;
+}
+
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: #03486e;
@@ -40,13 +58,6 @@ p {
 @font-face {
   font-family: 'Coolvetica';
   src: url('./fonts/CoolveticaRg-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'La Belle Aurore';
-  src: url('./fonts/LaBelleAurore.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
